@@ -1,0 +1,18 @@
+{{#each alternates }}
+    <section class="page__section page__section--{{ bg }}">
+        <div class="page__container alternate">
+            <div class="alternate__block alternate__block--{{ side }}">
+                <img
+                    srcset="%=static=%img/content/fdy_ill_{{ image.name }}@2x.png 2x, %=static=%img/content/fdy_ill_{{ image.name }}@1x.png 1x"
+                    src="%=static=%img/content/fdy_ill_{{ image.name }}@1x.png"
+                    alt="{{ image.alt }}"
+                    class="alternate__ill"
+                >
+            </div>
+            <div class="alternate__block alternate__block--{{ side }} alternate__block--text">
+                <h2 class="alternate__title">{{{ title }}}</h2>
+                <p class="alternate__text">{{{ text }}}</p>
+            </div>
+        </div>
+    </section>
+{{/each }}

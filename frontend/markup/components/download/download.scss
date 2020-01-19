@@ -1,0 +1,32 @@
+.download {
+    position: relative;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:before {
+        position: absolute;
+        left: -265px;
+        top: -77px;
+        display: block;
+        content: "";
+        width: 648px;
+        height: 359px;
+        background-image: url('../img/minified-svg/fdy_deco_wave.svg');
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+
+    }
+    &__button {
+        @include button
+    }
+    &__title {
+        margin: 0 0 30px;
+        font-size: 50px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}

@@ -5,18 +5,43 @@ html, body {
 }
 
 .page {
-    
-}
-
-.page__wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
+    font-family: $HandBook;
+    color: $grey-2;
+    background-color: #fff;
+    &__wrapper {
+        min-height: 100%;
+        margin-bottom: -$footerHeight_desk;
+    }
+    &__section {
+        background-color: transparent;
+        padding: 0 $padding_desk;
+        &--grey {
+            background-color: $grey-3;
+        }
+        &--download {
+            background-color: $primary-c-2;
+            background-image: url('../img/content/fdy_bg_bottom@2x.png');
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+    }
+    &__container {
+        width: 1110px;
+        margin: 0 auto;
+    }
+    &__buffer {
+        height: $footerHeight_desk;
+    }
+    &__header {
+        background-color: $primary-c-2;
+        padding: 0 $padding_desk;
+    }
+    &__footer {
+        background-color: $grey-1;
+    }
 }
 
 * html .page__wrapper {
     height: 100%;
-}
-
-.page__buffer {
-    height: 50px;
 }

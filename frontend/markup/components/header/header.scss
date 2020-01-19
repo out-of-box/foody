@@ -1,0 +1,31 @@
+.header {
+    position: relative;
+    padding: 40px 0 50px;
+    color: #fff;
+    &__hero {
+        width: 540px;
+    }
+    &__ill {
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        margin: 0 0 0 120px;
+    }
+    &__title {
+        margin: 0 0 40px;
+        font-size: 68px;
+        letter-spacing: -1px;
+    }
+    &__text {
+        margin: 0 0 40px;
+        font-size: 22px;
+    }
+    &__CTA {
+        margin: 0 0 30px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &__button {
+        @include button
+    }
+}

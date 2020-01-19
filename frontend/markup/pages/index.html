@@ -2,24 +2,45 @@
 <html class="no-js" lang="ru">
 
     <head>
-        {{> head/head head.defaults}}
+        {{> head/head head.defaults }}
     </head>
 
     <body class="page">
-        %=symbols=%
+        <header class="page__header">
+            <div class="page__container">
+                {{> header/header }}
+            </div>
+        </header>
+        <main class="page__wrapper">
+            <section class="page__section">
+                <div class="page__container">
+                    {{> advantages/advantages advantages.rest }}
+                </div>
+            </section>
 
-        <section class="page__wrapper">
+            {{> alternate/alternate alternate.rest }}
+            
+            <section class="page__section page__section--grey">
+                <div class="page__container">
+                    {{> started/started }}
+                </div>
+            </section>
+            
+            <section class="page__section page__section--download">
+                <div class="page__container">
+                    {{> download/download }}
+                </div>
+            </section>
 
-            <!-- Include your modules here -->
-
-            {{> example/example}}
-
+            <!-- Footer buffer -->
             <div class="page__buffer"></div>
 
-        </section>
+        </main>
 
         <footer class="page__footer">
-            {{> footer/footer}}
+            <div class="page__container">
+                {{> footer/footer }}
+            </div>
         </footer>
 
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
@@ -27,6 +48,7 @@
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
         <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+        %=symbols=%
     </body>
 
 </html>

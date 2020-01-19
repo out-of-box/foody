@@ -1,0 +1,46 @@
+.alternate {
+    display: flex;
+    justify-content: space-between;
+    height: 490px;
+    align-items: center;
+
+    &__block {
+        box-sizing: border-box;
+        width: 540px;
+        font-size: 0;
+        &--right {
+            order: 2;
+            &.alternate__block--text {
+                padding: 0 0 0 95px;
+                order: 1;
+            }
+        }
+        &--text {
+            padding: 0 65px 0 0;
+        }
+    }
+    &__ill {
+        width: 540px;
+        height: auto;
+    }
+    &__title {
+        margin: 0 0 30px;
+        padding: 0 0 0 48px;
+        font-size: 45px;
+        font-weight: 900;
+        &:before{ 
+            position: absolute;
+            content: "";
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin: 22px 0 0 -48px;
+            background-color: $primary-c-3;
+        }
+    }
+    &__text {
+        margin: 0;
+        padding: 0 0 0 48px;
+        font-size: 22px;
+    }
+}

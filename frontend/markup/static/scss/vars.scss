@@ -1,2 +1,29 @@
 // File for scss-vars.
 // For example: main colors, paddings and so on.
+
+// Sizes:
+$footerHeight_desk: 230px;
+$footerHeight_tab: 300px;
+$footerHeight_mob: 340px;
+
+$width_desk: 1110px;
+$width_desk: 688px;
+
+$padding_desk: 65px;
+$padding_tab: 40px;
+$padding_mob: 25px;
+
+// Colors:
+$primary-c-1: #00AC8C;
+$primary-c-2: #00B896;
+$primary-c-3: #63EDCB;
+
+$alert-c: #FF3737;
+
+$grey-1: #262A33;
+$grey-1-l: #868A92;
+$grey-2: #353C61;
+$grey-3: #FAFBFF;
+
+// timing function
+$timing: 0.4s ease-in-out;

@@ -1,18 +1,34 @@
-/* Your custom fonts here */
-
-/* Example
+@font-face {
+    font-family: 'PF Handbook Pro';
+    src: url('../fonts/PFHandbookPro-Regular.woff2') format('woff2'),
+        url('../fonts/PFHandbookPro-Regular.woff') format('woff'),
+        url('../fonts/PFHandbookPro-Regular.ttf') format('truetype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/Custom-Font.eot');
-    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Custom-Font.woff') format('woff'),
-         url('../fonts/Custom-Font.svg#custom_font') format('svg');
-    font-weight: 400;       // For normal width. It could has another value   
-    font-style: normal;     // Also could has another value
-    }
+    font-family: 'PF Handbook Pro';
+    src: url('../fonts/PFHandbookPro-Bold.woff2') format('woff2'),
+        url('../fonts/PFHandbookPro-Bold.woff') format('woff'),
+        url('../fonts/PFHandbookPro-Bold.ttf') format('truetype');
+    font-display: swap;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Handbook Pro';
+    src: url('../fonts/PFHandbookPro-Black.woff2') format('woff2'),
+        url('../fonts/PFHandbookPro-Black.woff') format('woff'),
+        url('../fonts/PFHandbookPro-Black.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
+
 
 
 // Var for using custom font
-$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
-*/
+$HandBook: 'PF Handbook Pro', Helvetica, Arial, sans-serif;

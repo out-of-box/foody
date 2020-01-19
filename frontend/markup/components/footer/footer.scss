@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0 40px;
+    color: $grey-1-l;
+    font-size: 15px;
+
+    &__logo {
+        width: 65px;
+        margin: 0 220px 0 0;
+        color: #fff;
+        font-size: 29px;
+        font-weight: bold;
+    }
+    &__title {
+        color: #fff;
+        margin: 0 0 15px;
+    }
+    &__text {
+        margin: 0;
+    }
+    &__email {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        @include underline;
+    }
+    &__block {
+        width: 255px;
+        margin: 0 30px 65px 0;
+        padding: 0 0 0 95px;
+    }
+    &__link {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        @include underline;
+    }
+}
