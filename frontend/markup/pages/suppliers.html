@@ -2,29 +2,36 @@
 <html class="no-js" lang="ru">
 
     <head>
-        {{> head/head head.rest }}
+        {{> head/head head.sup}}
     </head>
 
     <body class="page">
+        %=symbols=%
+
         <header class="page__header">
             <div class="page__container">
-                {{> header/header header.rest }}
+                {{> header/header header.sup }}
             </div>
         </header>
         <main class="page__wrapper">
             <section class="page__section">
                 <div class="page__container">
-                    {{> advantages/advantages advantages.rest }}
+                    {{> advantages/advantages advantages.sup }}
                 </div>
             </section>
 
-            {{> alternate/alternate alternate.rest }}
+            {{> alternate/alternate alternate.sup }}
 
-            {{> started/started started.rest}}
+            {{> started/started started.sup}}
 
             <section class="page__section page__section--download">
                 <div class="page__container">
                     {{> download/download }}
+                </div>
+            </section>
+            <section class="page__section  page__section--form">
+                <div class="page__container">
+                    {{> form/form }}
                 </div>
             </section>
 
@@ -44,7 +51,6 @@
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
         <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
-        %=symbols=%
     </body>
 
 </html>

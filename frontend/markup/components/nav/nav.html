@@ -1,10 +1,10 @@
 <nav class="nav">
     <img src="%=static=%img/minified-svg/fdy_logo.svg" alt="Foody" class="nav__logo">
     <div class="nav__menu">
-        <a href="" class="nav__link nav__link--rest nav__link--active">
+        <a href="{{restlink}}" class="nav__link nav__link--rest {{#if isrest }}nav__link--active{{/if}}">
             For restaurants
         </a>
-        <a href="" class="nav__link nav__link--sup">
+        <a href="{{suplink}}" class="nav__link nav__link--sup {{#if issup }}nav__link--active{{/if}}">
             For suppliers
         </a>
     </div>

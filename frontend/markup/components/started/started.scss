@@ -18,18 +18,34 @@
         &:before {
             position: absolute;
             left: 50%;
-            margin: 355px 0 0 -40px;
             counter-increment: started;
             content: counter(started);
             display: block;
             width: 75px;
             height: 75px;
+            margin: 355px 0 0 -40px;
             border-radius: 50%;
             border: 3px solid $primary-c-2;
             font-size: 40px;
-            line-height: 75px;
+            line-height: 80px;
             text-align: center;
             color: $primary-c-2;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            display: none;
+            top: 393px;
+            left: 50%;
+            width: 200px;
+            height: 2px;
+            margin: 0 0 0 87px;
+            background-color: #EAEAEA;
+        }
+        &:not(:last-child) {
+            &:after {
+                display: block;
+            }
         }
     }
     &__text {

@@ -1,13 +1,15 @@
 <ul class="advantages">
     {{#each advantage }}
         <li class="advantages__item">
-            <img src="%=static=%img/minified-svg/fdy_ico_{{icon}}.svg" alt="Star">
+            <img src="%=static=%img/minified-svg/fdy_ico_{{icon}}.svg" alt="{{icon}}">
             <h3 class="advantages__title">
                 {{{ title }}}
             </h3>
-            <p class="advantages__text">
-                {{{ text }}}
-            </p>
+            {{#if text}}
+                <p class="advantages__text">
+                    {{{ text }}}
+                </p>
+            {{/if}}
         </li>
     {{/each}}
 </ul>

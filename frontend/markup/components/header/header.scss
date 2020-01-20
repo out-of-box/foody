@@ -7,9 +7,18 @@
     }
     &__ill {
         position: absolute;
-        bottom: -40px;
         left: 50%;
-        margin: 0 0 0 120px;
+        height: auto;
+        &--tomato {
+            bottom: -40px;
+            width: 382px;
+            margin: 0 0 0 120px;
+        }
+        &--hand {
+            bottom: 0;
+            width: 781px;
+            margin: 0 0 0 -100px;
+        }
     }
     &__title {
         margin: 0 0 40px;

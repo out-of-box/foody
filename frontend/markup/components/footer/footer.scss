@@ -32,8 +32,11 @@
     }
     &__link {
         position: relative;
-        color: #fff;
+        color: $grey-1-l;
         text-decoration: none;
         @include underline;
+        &:after {
+            background-color: $grey-1-l;
+        }
     }
 }
