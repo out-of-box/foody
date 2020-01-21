@@ -38,3 +38,60 @@
         @include button
     }
 }
+
+@media only screen and (max-width: $break_desk) {
+    .header {
+        &__hero {
+            width: 355px;
+        }
+        &__title {
+            margin: 0 0 20px;
+            font-size: 50px;
+        }
+        &__text {
+            margin: 0 0 30px;
+            font-size: 20px;
+        }
+        &__ill {
+            &--tomato {
+                bottom: -40px;
+                width: 290px;
+                margin: 0 0 0 60px;
+            }
+            &--hand {
+                width: 538px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $break_tab) {
+    .header {
+        &--tomato {
+            padding: 40px 0 255px;
+        }
+        &--hand {
+            padding: 40px 0 345px;
+        }
+        &__hero {
+            width: 100%;
+        }
+        &__title {
+            margin: 0 0 20px;
+            font-size: 40px;
+        }
+        &__ill {
+            &--tomato {
+                bottom: -100px;
+                width: 220px;
+                margin: 0 0 0 -110px;
+            }
+            &--hand {
+                width: 470px;
+                margin: 0;
+                left: -20px;
+            }
+        }
+    }
+}

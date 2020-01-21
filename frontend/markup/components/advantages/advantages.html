@@ -1,7 +1,7 @@
-<ul class="advantages">
+<ul class="advantages {{#if isrest}}advantages--rest{{/if}}">
     {{#each advantage }}
         <li class="advantages__item">
-            <img src="%=static=%img/minified-svg/fdy_ico_{{icon}}.svg" alt="{{icon}}">
+            <img class="advantages__icon" src="%=static=%img/minified-svg/fdy_ico_{{icon}}.svg" alt="{{icon}}">
             <h3 class="advantages__title">
                 {{{ title }}}
             </h3>

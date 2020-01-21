@@ -7,6 +7,7 @@
     padding: 75px 0 80px;
     height: 380px;
     &__title {
+        margin: 0 0 30px;
         font-weight: 900;
         font-size: 45px;
     }
@@ -38,8 +39,32 @@
             outline: none;
             border-color: $primary-c-2;
         }
+        &--error {
+            border-color: $alert-c;
+        }
     }
     &__button {
         @include button;
+    }
+}
+
+@media only screen and (max-width: $break_desk) {
+    .form {
+        height: 450px;
+        padding: 55px 0 60px;
+        &__title {
+            font-size: 32px;
+        }
+        &__container {
+            flex-wrap: wrap;
+            max-width: 435px;
+        }
+        &__input {
+            width: 100%;
+            margin: 0 0 10px;
+            &:not(:last-child) {
+                margin: 0 0 10px;
+            }
+        }
     }
 }

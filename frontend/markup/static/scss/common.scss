@@ -1,6 +1,4 @@
-// Common styles of the project
-
-html, body {
+body, html {
     height: 100%;
 }
 
@@ -13,6 +11,9 @@ html, body {
         margin-bottom: -$footerHeight_desk;
     }
     &__section {
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
         background-color: transparent;
         padding: 0 $padding_desk;
         &--grey {
@@ -21,20 +22,21 @@ html, body {
         &--download {
             background-color: $primary-c-2;
             background-image: url('../img/content/fdy_bg_bottom@2x.png');
-            background-size: cover;
-            background-position: 50% 50%;
+            background-size: 1950px;
+            background-position: 50% bottom;
             background-repeat: no-repeat;
         }
         &--form {
             background-color: #fff;
             background-image: url('../img/content/fdy_bg_form@2x.png');
-            background-size: cover;
-            background-position: 50% 50%;
+            background-size: 1950px;
+            background-position: 50% top;
             background-repeat: no-repeat;
         }
     }
     &__container {
-        width: 1110px;
+        width: 100%;
+        max-width: $width_desk;
         margin: 0 auto;
     }
     &__buffer {
@@ -43,6 +45,10 @@ html, body {
     &__header {
         background-color: $primary-c-2;
         padding: 0 $padding_desk;
+        overflow: hidden;
+        &--visible {
+            overflow: visible;
+        }
     }
     &__footer {
         background-color: $grey-1;
@@ -51,4 +57,55 @@ html, body {
 
 * html .page__wrapper {
     height: 100%;
+}
+
+@media only screen and (max-width: $break_desk) {
+    .page {
+        &__wrapper {
+            margin-bottom: -$footerHeight_tab;
+        }
+        &__header {
+            padding: 0 $padding_tab;
+        }
+        &__section {
+            padding: 0 $padding_tab;
+        }
+        &__footer {
+            padding: 0 $padding_tab;
+        }
+        &__container {
+            width: 100%;
+            max-width: $width_tab;
+        }
+        &__buffer {
+            height: $footerHeight_tab;
+        }
+    }
+}
+@media only screen and (max-width: $break_tab) {
+    .page {
+        &__wrapper {
+            margin-bottom: -$footerHeight_mob;
+        }
+        &__header {
+            padding: 0 $padding_mob;
+        }
+        &__section {
+            padding: 0 $padding_mob;
+            &--download {
+                background-position: 55%;
+                background-size: cover;
+            }
+        }
+        &__footer {
+            padding: 0 $padding_tab;
+        }
+        &__container {
+            width: 100%;
+            max-width: 100%;
+        }
+        &__buffer {
+            height: $footerHeight_mob;
+        }
+    }
 }

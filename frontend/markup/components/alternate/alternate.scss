@@ -28,7 +28,7 @@
         padding: 0 0 0 48px;
         font-size: 45px;
         font-weight: 900;
-        &:before{ 
+        &:before {
             position: absolute;
             content: "";
             display: block;
@@ -42,5 +42,52 @@
         margin: 0;
         padding: 0 0 0 48px;
         font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: $break_desk) {
+    .alternate {
+        height: 312px;
+        &__block {
+            width: 344px;
+            &--right {
+                &.alternate__block--text {
+                    padding: 0;
+                }
+            }
+        }
+        &__title {
+            margin: 0 0 20px;
+            font-size: 32px;
+            &:before {
+                margin: 15px 0 0 -48px;
+            }
+        }
+        &__text {
+            font-size: 15px;
+        }
+        &__ill {
+            width: 344px;
+        }
+    }
+}
+
+@media only screen and (max-width: $break_tab) {
+    .alternate {
+        flex-direction: column;
+        height: unset;
+        padding: 55px 0 0;
+        &__block {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            order: 2;
+            &--text {
+                display: block;
+                order: 1;
+                padding: 0;
+                margin: 0 0 40px;
+            }
+        }
     }
 }

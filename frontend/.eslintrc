@@ -38,7 +38,7 @@
         "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
         "new-cap": 2,
         "new-parens": 2,
-        "no-alert": 2,
+        "no-alert": 1,
         "no-array-constructor": 2,
         "no-caller": 2,
         "no-debugger": 0,
@@ -116,6 +116,6 @@
         "prefer-arrow-callback": 0,
         "prefer-template": 0,
         "require-yield": 2,
-        "no-var": 1
+        "no-var": 0
     }
 }

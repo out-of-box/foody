@@ -7,11 +7,14 @@ $footerHeight_tab: 300px;
 $footerHeight_mob: 340px;
 
 $width_desk: 1110px;
-$width_desk: 688px;
+$width_tab: 688px;
 
 $padding_desk: 65px;
 $padding_tab: 40px;
 $padding_mob: 25px;
+
+$break_desk: $width_desk + $padding_desk * 2;
+$break_tab: $width_tab + $padding_tab * 2 - 1;
 
 // Colors:
 $primary-c-1: #00AC8C;

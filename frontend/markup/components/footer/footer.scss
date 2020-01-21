@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     flex-wrap: wrap;
+    height: 230px;
     padding: 50px 0 40px;
     color: $grey-1-l;
     font-size: 15px;
@@ -17,6 +18,9 @@
         margin: 0 0 15px;
     }
     &__text {
+        margin: 0;
+    }
+    &__privacy {
         margin: 0;
     }
     &__email {
@@ -37,6 +41,43 @@
         @include underline;
         &:after {
             background-color: $grey-1-l;
+        }
+    }
+}
+
+@media only screen and (max-width: $break_desk) {
+    .footer {
+        box-sizing: border-box;
+        height: 300px;
+        padding: 55px 0 60px;
+        font-size: 13px;
+
+        &__logo {
+            width: 100%;
+            height: 30px;
+            margin: 0 0 30px;
+        }
+        &__block {
+            width: 314px;
+            margin: 0 0 45px;
+            padding: 0 30px 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: $break_tab) {
+    .footer {
+        height: 340px;
+        padding: 35px 0 40px;
+        &__logo {
+            margin: 0 0 25px;
+        }
+        &__block {
+            padding: 0;
+            margin: 0 0 25px;
+        }
+        &__title {
+            margin: 0 0 10px;
         }
     }
 }

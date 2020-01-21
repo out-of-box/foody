@@ -1,6 +1,7 @@
 data = {
     advantages: {
         rest: {
+            isrest: true,
             advantage: [
                 {
                     title: "All of&nbsp;your suppliers in&nbsp;one place",
@@ -20,6 +21,7 @@ data = {
             ]
         },
         sup: {
+            isrest: false,
             advantage: [
                 {
                     title: "All of&nbsp;your clients in&nbsp;one app",
