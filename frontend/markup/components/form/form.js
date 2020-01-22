@@ -11,23 +11,22 @@ function touchEmail() {
     errors.email = !/^.+@.+\..+$/.test(email.value.trim());
 }
 function touchTel() {
-    console.log(/^[\d-()\s]+$/.test(tel.value));
     errors.tel = !/^[+\d-()\s]+$/.test(tel.value.trim());
 }
 
 form.addEventListener('submit', function (event) {
-    event.preventDefault();
     touchTel();
     touchEmail();
-    if (!errors.email || !errors.tel) {
+    if (!errors.email && !errors.tel) {
         var data = {
             name: name.value ? name.value.trim() : '',
             email: email.value ? email.value.trim() : '',
             tel: tel.value ? tel.value.trim() : ''
         };
         // Вставить обработчик формы сюда
-        console.log(data);
+
     } else {
+        event.preventDefault();
         if (errors.email) {
             email.classList.add('form__input--error');
         }
