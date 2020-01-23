@@ -23,7 +23,7 @@ function xhr(data) {
                 screen.classList.add('form__screen--hidden');
                 thankyou.classList.remove('form__thankyou--hidden');
             } else {
-                console.log(this);
+                console.log(this.status);
             }
         }
     };
