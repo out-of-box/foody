@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 .page {
@@ -27,9 +28,11 @@ body, html {
             background-repeat: no-repeat;
         }
         &--form {
-            background-color: #fff;
-            background-image: url('../img/content/fdy_bg_form@2x.png');
-            background-size: 1950px;
+            //background-color: #fff;
+            //background-image: url('../img/content/fdy_bg_form@2x.png');
+            background-color: $primary-c-2;
+            background-image: url('../img/content/fdy_bg_bottom@2x.png');
+            background-size: cover;
             background-position: 50% top;
             background-repeat: no-repeat;
         }

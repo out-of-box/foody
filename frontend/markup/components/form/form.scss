@@ -13,6 +13,7 @@
         }
     }
     &__title {
+        color: #fff;
         margin: 0 0 30px;
         font-weight: 900;
         font-size: 45px;
@@ -39,11 +40,11 @@
             margin: 0 30px 0 0;
         }
         &::placeholder {
-            color: $grey-2;
+            color: $grey-1-l;
         }
         &:focus {
             outline: none;
-            border-color: $primary-c-2;
+            border-color: $grey-2;
         }
         &--error {
             border-color: $alert-c;
@@ -51,6 +52,9 @@
     }
     &__button {
         @include button;
+        &:before {
+            display: none;
+        }
     }
 }
 
