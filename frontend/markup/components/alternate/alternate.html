@@ -1,7 +1,7 @@
 {{#each alternates }}
     <section class="page__section page__section--{{ bg }}">
         <div class="page__container alternate">
-            <div class="alternate__block alternate__block--{{ side }}">
+            <div class="alternate__block alternate__block--{{ side }} {{#if image.padded}}alternate__block--pad{{/if}}">
                 <img
                     loading="lazy"
                     srcset="%=static=%img/content/fdy_ill_{{ image.name }}@2x.png 2x, %=static=%img/content/fdy_ill_{{ image.name }}@1x.png 1x"
