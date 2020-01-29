@@ -1,8 +1,8 @@
 var form = document.querySelector('.js-form');
-var screen = document.querySelector('.js-screen');
+// var screen = document.querySelector('.js-screen');
 var name = document.querySelector('.js-name');
 var email = document.querySelector('.js-email');
-var thankyou = document.querySelector('.js-thankyou');
+// var thankyou = document.querySelector('.js-thankyou');
 var tel = document.querySelector('.js-tel');
 var errors = {
     email: false,
@@ -15,6 +15,7 @@ function touchEmail() {
 function touchTel() {
     errors.tel = !/^[+\d-()\s]+$/.test(tel.value.trim());
 }
+/*
 function xhr(data) {
     var rq = new XMLHttpRequest();
     rq.onreadystatechange = function () {
@@ -33,6 +34,7 @@ function xhr(data) {
     rq.setRequestHeader('Authorization', 'apikey: d0f13708a1f8b0c6bd8c474fe');
     rq.send(data);
 }
+*/
 // https://outofcloud.us2.list-manage.com/subscribe/post?u=d0f13708a1f8b0c6bd8c474fe&amp;id=7e2ad16b78
 
 form.addEventListener('submit', function (event) {
@@ -46,9 +48,9 @@ form.addEventListener('submit', function (event) {
             'email_address': email.value ? email.value.trim() : '',
             PHONE: tel.value ? tel.value.trim() : ''
         };
+        console.log(data);
         // Вставить обработчик формы сюда
-        xhr(data);
-
+        // xhr(data);
     } else {
         if (errors.email) {
             email.classList.add('form__input--error');

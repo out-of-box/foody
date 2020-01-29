@@ -35,7 +35,7 @@
         color: $grey-2;
         font-size: 18px;
         font-family: inherit;
-        transition: border-color $timing;
+        transition: border-color $timing, box-shadow $timing;
         &:not(:last-child) {
             margin: 0 30px 0 0;
         }
@@ -44,7 +44,7 @@
         }
         &:focus {
             outline: none;
-            border-color: $grey-2;
+            box-shadow: 0 0 0 2px $grey-2;
         }
         &--error {
             border-color: $alert-c;
