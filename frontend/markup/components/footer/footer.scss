@@ -18,18 +18,33 @@
         margin: 0 0 15px;
     }
     &__text {
-        margin: 0;
+        margin: 0 0 4px;
     }
     &__privacy {
         margin: 0;
     }
+    &__icon {
+        width: 16px;
+        height: 16px;
+        margin: 4px 4px -4px 0;
+        fill: $grey-1-l;
+    }
     &__email {
+        display: block;
         position: relative;
+        margin: 0 0 4px;
         color: #fff;
+        line-height: 16px;
         text-decoration: none;
         @include underline;
+        &:after {
+            left: 22px;
+        }
     }
     &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         width: 255px;
         margin: 0 30px 65px 0;
         padding: 0 0 0 95px;

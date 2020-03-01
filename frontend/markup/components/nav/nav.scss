@@ -27,11 +27,6 @@
             bottom: -5px;
             height: 3px;
         }
-        &:hover {
-            &:after {
-                width: calc(100% - 30px);
-            }
-        }
         &:before {
             position: absolute;
             display: block;

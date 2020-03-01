@@ -14,7 +14,7 @@ data = {
                     icon: "chat"
                 },
                 {
-                    title: "Digitize your invoices with a&nbsp;snap of&nbsp;picture",
+                    title: "Digitize your invoices simply with your phone&rsquo;s camera",
                     text: "Digitize invoices, supplier catalogs, and order history. Record keeping has never been so&nbsp;easy.",
                     icon: "money"
                 }
@@ -24,7 +24,7 @@ data = {
             isrest: false,
             advantage: [
                 {
-                    title: "All of&nbsp;your clients in&nbsp;one app",
+                    title: "All of&nbsp;your customers in&nbsp;one app",
                     icon: "clients"
                 },
                 {
@@ -32,7 +32,7 @@ data = {
                     icon: "promo"
                 },
                 {
-                    title: "Increase sales by&nbsp;expanding your clients list",
+                    title: "Increase sales by&nbsp;discovering new customers",
                     icon: "money"
                 }
             ]

@@ -118,17 +118,18 @@
     &:after {
         position: absolute;
         left: 0;
+        right: 100%;
         bottom: -2px;
         content: "";
         display: block;
-        width: 0;
+        //width: 0;
         height: 1px;
         background-color: #fff;
-        transition: width $timing;
+        transition: right $timing;
     }
     &:hover {
         &:after {
-            width: 100%;
+            right: 0;
         }
     }
 }
