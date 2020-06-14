@@ -3,6 +3,10 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 0 60px;
+    &--compact {
+        margin: 0;
+        padding: $padding_mob 0;
+    }
     &__logo {
         width: 150px;
         height: auto;
@@ -70,6 +74,9 @@
     .nav {
         flex-wrap: wrap;
         margin: 0 0 55px;
+        &--compact {
+            margin: 0;
+        }
         &__logo {
             margin: 0 0 30px;
         }
